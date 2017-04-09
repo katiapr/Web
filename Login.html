@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Login</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="StyleLogin.css" />
+    <!--CSS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!--JQuery-->
+    <script type="text/javascript" src="ScriptLogin.js"></script>
+    <!--JS-->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!--ICONS-->
+</head>
+
+
+<body onload="loadPage()">
+
+    <header class="Logo"></header>
+    <div class="login">
+        <section class="CssSignUp">
+            אין לך עדין חשבון לחץ  <a href="SignUp.html"> כאן</a> :)
+        </section>
+        <form id="login" action="PersonalArea.html">
+
+            <input type="text" class="userName" required="" placeholder="User Name">
+            <br />
+            <br />
+            <input type="password" class="password" required="" placeholder="Password">
+            <br />
+            <label for="saveMe">שמור אותי</label>
+            <input type="checkbox" class="saveMe">
+            <br />
+            <button type="submit">התחבר</button>
+        </form>
+    </div>
+
+
+    <div>
+        <ul>
+            <li>
+                <a id="AboutUs">
+                    <i class="fa fa-cog fa-spin fa-3x"></i>אודות
+                </a>
+            </li>
+            <li>
+                <a id="Sport">
+                    <i class="fa fa-soccer-ball-o fa-spin fa-3x"></i>ספורט
+                </a>
+            </li>
+        </ul>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <ul>
+            <li>
+                <a id="Recipes">
+                    <i class="fa fa-cutlery fa-3x"></i>מתכונים
+                </a>
+            </li>
+            <li>
+                <a class="SomethingElse">
+                    <i class="fa fa-comments-o fa-3x"></i>משהו נוסף
+                </a>
+            </li>
+        </ul>
+    </div>
+    <iframe id="iframe" src="AboutUs.html"></iframe>
+    <!--to chage the name of the iframe class-->
+    <!--<iframe src="Recipes.html">Recipes</iframe>
+    <iframe src="Sport.html">Sport</iframe>-->
+
+</body>
+
+</html>
