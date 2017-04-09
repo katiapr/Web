@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <title>MyDiary</title>
+    <link rel="stylesheet" href="StylePersonal.css" /><!--CSS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="ScriptPersonal.js"></script><!--JS-->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"><!--ICONS-->
+    <meta charset="utf-8" />
+
+</head>
+
+<body>
+
+    <header></header>
+    <nav>
+        <ul>
+            <li><a href="MyProperties.html">הגדרות</a></li>
+            <li><a class="active" href="MyDiary.html">היומן שלי</a></li>
+            <li><a href="MyProgress.html">התהליך שלי</a></li>
+            <li><a href="AdminArea.html">גישה למנהל</a></li>
+        </ul>
+    </nav>
+
+    <br/><br /><br />
+    <h1 class="head">היומן שלי </h1>
+    <br />
+    <button id="cmdAdd"><i class="fa fa-plus"></i> הוסף</button>
+    <button id="cmdEdit"><i class="fa fa-edit"></i>ערוך</button>
+    <button id="cmdRemove"><i class="fa fa-eraser"></i>מחק</button>
+    <br />
+    <section id="txtInput">
+        <label id="lblDate" for="txtDate"></label>
+        <input id="txtDate" type="date">
+
+        <label id="lblItem" for="txtItem"></label>
+        <input id="txtItem" required placeholder="פריט">
+
+        <label id="lblCalories" for="txtCalories"></label>
+        <input id="txtCalories" type ="number" required placeholder="קלוריות">
+
+        <label id="lblMarks" for="txtMarks"></label>
+        <input id="txtMarks" required placeholder="הערות">
+    </section>
+    <table id="tblDiary">
+        <tr>
+            <th><input id="selectAll" type="checkbox" />סמן הכל</th>
+            <th>תאריך</th>
+            <th>פריט</th>
+            <th>קלוריות</th>
+            <th>הערות</th>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th>סהכ קלוריות להיום</th>
+            <th>סהכ קלוריות להשבוע</th>
+        </tr>
+    </table>
+</body>
+
+</html>
